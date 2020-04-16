@@ -1,0 +1,57 @@
+ <!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Note taker</title> 
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+          <style> 
+              #l1{
+                  
+                  position: absolute;
+              }
+              #tarea{
+                  margin-left: 40px;
+              }
+</style>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <script type="text/javascript" src="load.js"></script>
+          
+
+
+  
+      </head>  
+      <body>
+
+          
+          <br><br>
+          <form method="post" action="page1.php" enctype="multipart/form-data" >
+              <div>
+                <label id="l1">Notes</label>
+                <textarea name="notes" id="tarea" rows="30" cols="50" value="">
+                    
+
+</textarea>
+              </div>
+              <div>
+                  <label >
+                      Links
+                  </label>
+                  <textarea id="link1" type="text" name="link1" value="" ></textarea>
+              </div>
+              <div>
+                  <label>Files</label>
+         <input type="file" id='file' name="image" ><br>
+<!--        <p><img src="" id="output" width="200"/></p>-->
+              </div>
+              <input  type="submit" name="submit" value="Post it " class="btn btn-info"  />
+              
+          </form>
+
+<div id="some"></div>
+          <div  id='preview'></div>
+          <img src="/uploads/layers-2x.png">
+
+      </body>  
+ </html>
